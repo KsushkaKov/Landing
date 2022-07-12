@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+   
+    
+
+:root {
+     font-family: 'Lato', sans-serif;
+    --main-color: #000;
+    --button-color: rgb(0, 255, 38);
+    --pricing-color: rgb(198, 235, 11);
+    --footet-color: rgba(198, 235, 11, 0.605);
+    --border-color: #ccc;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+}
+
+#nav-bar{
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(198, 235, 11, 0.605);
+}
+
+
+#header-img {
+ width: 271px;
+ 
+}
+
+.header-container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+ .nav-bar__menu {
+    display: flex;
+    flex-direction: column;
+   }
+
+.nav-bar__link-item {
+    text-decoration: none;
+    color: var(--main-color);
+    padding-bottom: 5px;
+    
+}
+
+.nav-bar__link-item:hover {
+    text-decoration: underline; 
+}
+
+li {
+    list-style-type: none;
+}
+
+@media (min-width: 530px) {
+   #nav-bar > .container {
+    display: flex;
+} 
+   .nav-bar__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    
+   }
+}
+
+.hero {
+    margin-top: 20px;
+}
+
+
+
+.hero-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#email {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    border-color:var(--button-color);
+    border-radius: 6px;
+    
+}
+
+#submit {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color:#08ad21;
+    
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@media (min-width: 6500px) {
+    .hero {
+        margin-top: 50px;
+    }
+}
+
+#features{
+    background-image: url(../images/how-to-make-smoothie.jpg);
+
+}
+
+.features__grid {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+}
+
+.features__grid-logo img {
+    width: 70px;
+
+}
+
+.features__grid h2 {
+    text-align: center;
+   
+}
+
+
+.features__grid p {
+    text-align: center;
+}
+
+@media (max-width:550px){
+    .features__grid-logo img {display: none;}
+}
+
+#video {
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+#video iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 550px) {
+    #video iframe {
+    width:450px;
+    height: 450px;
+    
+}
+}
+
+.recipes__grid-coctail-straw {
+background-image: url(../images/how-to-make-smoothie-4.jpg);
+}
+
+.recipes__grid-coctail-pineaple {
+    background-image: url(../images/3695.jpg);
+}
+
+.recipes__grid-coctail-banana {
+background-image: url(../images/banana.jpg);
+}
+
+.recipes__grid-coctail-straw, 
+.recipes__grid-coctail-pineaple,
+.recipes__grid-coctail-banana,
+#features {
+background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .recipes__grid-title {
+       text-transform: uppercase;
+       font-size: 1em;
+       font-weight: 900;
+    }
+
+    .recipes__grid-button {
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: var(--button-color);
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+     .recipes__grid-button:hover {
+        border-style: dotted;
+        color: var(--main-color);
+     }
+
+     #footer {
+        background-color: var(--footet-color);
+     }
+   #footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 5px;
+    
+}
+    .footer__info a {
+       text-decoration: none;
+       color: #000;
+     }
+
+     .footer__info-date {
+        text-align: end;
+        color:var(--border-color);
+
+     }
